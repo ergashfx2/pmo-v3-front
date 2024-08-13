@@ -1,20 +1,27 @@
 import SideBar from "./components/sidebar/sidebar";
 import "./styles/App.css";
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Login from "./pages/login/login";
 import { AuthProvider } from "./config/auth";
-import PrivateRoute from "./routes/privateRoutes";
-import login from "./pages/login/login";
+import ProtectedRoute from "./routes/privateRoutes";
 
 function App() {
   return (
     <div className="App">
       <AuthProvider>
         <Router>
-          <Route path="/login" Component={login} />
-          <PrivateRoute path="/">
-            <SideBar />
-          </PrivateRoute>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <ProtectedRoute>
+                  <SideBar />
+                </ProtectedRoute>
+              }
+            />
+            <Route path="/login" element={<Login />} />
+          </Routes>
         </Router>
       </AuthProvider>
     </div>
