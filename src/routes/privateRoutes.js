@@ -3,8 +3,7 @@ import { Navigate } from "react-router-dom";
 import { AuthContext } from "../config/auth";
 
 const ProtectedRoute = ({ children }) => {
-  const { authToken } = useContext(AuthContext);
-  console.log(authToken);
+  const authToken = localStorage.getItem("authToken");
 
   if (!authToken) {
     return <Navigate to={"/login"} />;
