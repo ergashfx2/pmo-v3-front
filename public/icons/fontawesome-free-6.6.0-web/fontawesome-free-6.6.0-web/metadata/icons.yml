@@ -2718,7 +2718,7 @@ baby:
   search:
     terms:
       - uer
-      - users-people
+      - table-people
   styles:
     - solid
   unicode: f77c
@@ -9520,7 +9520,7 @@ circle-user:
       - employee
       - uer
       - username
-      - users-people
+      - table-people
   styles:
     - solid
     - regular
@@ -13865,7 +13865,7 @@ elevator:
       - hoist
       - lift
       - uer
-      - users-people
+      - table-people
   styles:
     - solid
   unicode: e16d
@@ -29141,7 +29141,7 @@ people-arrows:
       - talk
       - together
       - uer
-      - users-people
+      - table-people
   styles:
     - solid
   unicode: e068
@@ -29166,7 +29166,7 @@ people-carry-box:
     terms:
       - together
       - uer
-      - users-people
+      - table-people
   styles:
     - solid
   unicode: f4ce
@@ -41787,7 +41787,7 @@ universal-access:
   search:
     terms:
       - uer
-      - users-people
+      - table-people
   styles:
     - solid
   unicode: f29a
@@ -42130,7 +42130,7 @@ user:
       - uer
       - unspecified gender
       - username
-      - users-people
+      - table-people
   styles:
     - solid
     - regular
@@ -42183,7 +42183,7 @@ user-check:
       - employee
       - enable
       - uer
-      - users-people
+      - table-people
       - validate
       - working
   styles:
@@ -42208,7 +42208,7 @@ user-clock:
     terms:
       - employee
       - uer
-      - users-people
+      - table-people
   styles:
     - solid
   unicode: f4fd
@@ -42273,7 +42273,7 @@ user-gear:
       - employee
       - together
       - uer
-      - users-people
+      - table-people
   styles:
     - solid
   unicode: f4fe
@@ -42295,7 +42295,7 @@ user-graduate:
   search:
     terms:
       - uer
-      - users-people
+      - table-people
   styles:
     - solid
   unicode: f501
@@ -42327,7 +42327,7 @@ user-group:
       - silhouette
       - together
       - uer
-      - users-people
+      - table-people
   styles:
     - solid
   unicode: f500
@@ -42350,7 +42350,7 @@ user-injured:
     terms:
       - employee
       - uer
-      - users-people
+      - table-people
   styles:
     - solid
   unicode: f728
@@ -42377,7 +42377,7 @@ user-large:
     terms:
       - employee
       - uer
-      - users-people
+      - table-people
   styles:
     - solid
   unicode: f406
@@ -42404,7 +42404,7 @@ user-large-slash:
       - disconnect
       - employee
       - uer
-      - users-people
+      - table-people
   styles:
     - solid
   unicode: f4fa
@@ -42430,7 +42430,7 @@ user-lock:
       - padlock
       - privacy
       - uer
-      - users-people
+      - table-people
   styles:
     - solid
   unicode: f502
@@ -42545,7 +42545,7 @@ user-pen:
       - employee
       - modify
       - uer
-      - users-people
+      - table-people
   styles:
     - solid
   unicode: f4ff
@@ -42608,7 +42608,7 @@ user-secret:
       - sleuth
       - spy
       - uer
-      - users-people
+      - table-people
   styles:
     - solid
   unicode: f21b
@@ -42683,7 +42683,7 @@ user-tag:
     terms:
       - employee
       - uer
-      - users-people
+      - table-people
   styles:
     - solid
   unicode: f507
@@ -42774,7 +42774,7 @@ users:
       - employee
       - together
       - uer
-      - users-people
+      - table-people
   styles:
     - solid
   unicode: f0c0
@@ -42804,7 +42804,7 @@ users-between-lines:
 users-gear:
   aliases:
     names:
-      - users-cog
+      - table-cog
     unicodes:
       secondary:
         - 10f509
@@ -42821,7 +42821,7 @@ users-gear:
     terms:
       - employee
       - uer
-      - users-people
+      - table-people
   styles:
     - solid
   unicode: f509
@@ -42914,7 +42914,7 @@ users-slash:
       - employee
       - together
       - uer
-      - users-people
+      - table-people
   styles:
     - solid
   unicode: e073
@@ -44408,7 +44408,7 @@ wheelchair:
     terms:
       - disabled
       - uer
-      - users-people
+      - table-people
   styles:
     - solid
   unicode: f193

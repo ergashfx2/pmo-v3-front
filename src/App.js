@@ -1,31 +1,21 @@
-import SideBar from "./components/sidebar/sidebar";
 import "./styles/App.css";
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Login from "./pages/login/login";
-import { AuthProvider } from "./config/auth";
-import ProtectedRoute from "./routes/privateRoutes";
+import { BrowserRouter } from "react-router-dom";
+import { AuthProvider } from "./context/auth";
+import PublicRoutes from "./routes/public";
+import PrivateRoutes from "./routes/private";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <AuthProvider>
-        <Router>
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <ProtectedRoute>
-                  <SideBar />
-                </ProtectedRoute>
-              }
-            />
-            <Route path="/login" element={<Login />} />
-          </Routes>
-        </Router>
-      </AuthProvider>
-    </div>
+    <AuthProvider>
+      <BrowserRouter>
+          <div className={'row'}>
+            <PublicRoutes />
+            <PrivateRoutes />
+          </div>
+      </BrowserRouter>
+    </AuthProvider>
   );
-}
+};
 
 export default App;

@@ -1641,11 +1641,11 @@ humanitarian:
     - truck-plane
     - user-doctor
     - user-injured
-    - users-between-lines
-    - users-line
-    - users-rays
-    - users-rectangle
-    - users-viewfinder
+    - table-between-lines
+    - table-line
+    - table-rays
+    - table-rectangle
+    - table-viewfinder
     - vial-circle-check
     - vial-virus
     - vihara
@@ -2601,7 +2601,7 @@ social:
     - user
     - user-group
     - user-plus
-    - users
+    - table
     - video
   label: Social
 spinners:
@@ -2997,14 +2997,14 @@ users-people:
     - user-tag
     - user-tie
     - user-xmark
-    - users
-    - users-between-lines
-    - users-gear
-    - users-line
-    - users-rays
-    - users-rectangle
-    - users-slash
-    - users-viewfinder
+    - table
+    - table-between-lines
+    - table-gear
+    - table-line
+    - table-rays
+    - table-rectangle
+    - table-slash
+    - table-viewfinder
     - wheelchair
     - wheelchair-move
   label: Users + People

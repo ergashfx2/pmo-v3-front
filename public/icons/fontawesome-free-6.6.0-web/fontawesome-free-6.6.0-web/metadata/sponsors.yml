@@ -428,7 +428,7 @@ icis:
     - bag-seedling
     - bin-bottles
     - bin-bottles-recycle
-    - calendar-users
+    - calendar-table
     - chart-line-up-down
     - chart-mixed-up-circle-currency
     - chart-mixed-up-circle-dollar
@@ -565,7 +565,7 @@ medapps:
     - pager
     - stretcher
     - user-doctor-message
-    - users-medical
+    - table-medical
     - walker
   label: MedApps
   url: 'https://medapps.com.au'
@@ -1310,11 +1310,11 @@ un-ocha:
     - truck-field
     - truck-field-un
     - truck-plane
-    - users-between-lines
-    - users-line
-    - users-rays
-    - users-rectangle
-    - users-viewfinder
+    - table-between-lines
+    - table-line
+    - table-rays
+    - table-rectangle
+    - table-viewfinder
     - vial-circle-check
     - vial-virus
     - wheat-awn-circle-exclamation

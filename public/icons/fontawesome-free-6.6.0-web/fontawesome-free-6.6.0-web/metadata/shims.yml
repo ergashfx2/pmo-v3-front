@@ -252,7 +252,7 @@ google-plus-square:
   prefix: fab
   name: square-google-plus
 group:
-  name: users
+  name: table
 hand-grab-o:
   prefix: far
   name: hand-back-fist

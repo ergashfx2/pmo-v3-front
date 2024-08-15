@@ -3346,7 +3346,7 @@ baby:
   search:
     terms:
       - uer
-      - users-people
+      - table-people
   unicode: f77c
   voted: true
 baby-carriage:
@@ -11531,7 +11531,7 @@ circle-user:
       - employee
       - uer
       - username
-      - users-people
+      - table-people
   unicode: f2bd
   voted: false
 circle-xmark:
@@ -16826,7 +16826,7 @@ elevator:
       - hoist
       - lift
       - uer
-      - users-people
+      - table-people
   unicode: e16d
   voted: true
 ellipsis:
@@ -35525,7 +35525,7 @@ people-arrows:
       - talk
       - together
       - uer
-      - users-people
+      - table-people
   unicode: e068
   voted: false
 people-carry-box:
@@ -35555,7 +35555,7 @@ people-carry-box:
     terms:
       - together
       - uer
-      - users-people
+      - table-people
   unicode: f4ce
   voted: false
 people-group:
@@ -50909,7 +50909,7 @@ universal-access:
   search:
     terms:
       - uer
-      - users-people
+      - table-people
   unicode: f29a
   voted: false
 unlock:
@@ -51326,7 +51326,7 @@ user:
       - uer
       - unspecified gender
       - username
-      - users-people
+      - table-people
   unicode: f007
   voted: false
 user-astronaut:
@@ -51388,7 +51388,7 @@ user-check:
       - employee
       - enable
       - uer
-      - users-people
+      - table-people
       - validate
       - working
   unicode: f4fc
@@ -51418,7 +51418,7 @@ user-clock:
     terms:
       - employee
       - uer
-      - users-people
+      - table-people
   unicode: f4fd
   voted: false
 user-doctor:
@@ -51493,7 +51493,7 @@ user-gear:
       - employee
       - together
       - uer
-      - users-people
+      - table-people
   unicode: f4fe
   voted: false
 user-graduate:
@@ -51520,7 +51520,7 @@ user-graduate:
   search:
     terms:
       - uer
-      - users-people
+      - table-people
   unicode: f501
   voted: false
 user-group:
@@ -51557,7 +51557,7 @@ user-group:
       - silhouette
       - together
       - uer
-      - users-people
+      - table-people
   unicode: f500
   voted: false
 user-injured:
@@ -51585,7 +51585,7 @@ user-injured:
     terms:
       - employee
       - uer
-      - users-people
+      - table-people
   unicode: f728
   voted: false
 user-large:
@@ -51617,7 +51617,7 @@ user-large:
     terms:
       - employee
       - uer
-      - users-people
+      - table-people
   unicode: f406
   voted: false
 user-large-slash:
@@ -51649,7 +51649,7 @@ user-large-slash:
       - disconnect
       - employee
       - uer
-      - users-people
+      - table-people
   unicode: f4fa
   voted: false
 user-lock:
@@ -51680,7 +51680,7 @@ user-lock:
       - padlock
       - privacy
       - uer
-      - users-people
+      - table-people
   unicode: f502
   voted: false
 user-minus:
@@ -51815,7 +51815,7 @@ user-pen:
       - employee
       - modify
       - uer
-      - users-people
+      - table-people
   unicode: f4ff
   voted: false
 user-plus:
@@ -51888,7 +51888,7 @@ user-secret:
       - sleuth
       - spy
       - uer
-      - users-people
+      - table-people
   unicode: f21b
   voted: false
 user-shield:
@@ -51978,7 +51978,7 @@ user-tag:
     terms:
       - employee
       - uer
-      - users-people
+      - table-people
   unicode: f507
   voted: false
 user-tie:
@@ -52084,7 +52084,7 @@ users:
       - employee
       - together
       - uer
-      - users-people
+      - table-people
   unicode: f0c0
   voted: false
 users-between-lines:
@@ -52117,7 +52117,7 @@ users-between-lines:
 users-gear:
   aliases:
     names:
-      - users-cog
+      - table-cog
     unicodes:
       secondary:
         - 10f509
@@ -52141,7 +52141,7 @@ users-gear:
     terms:
       - employee
       - uer
-      - users-people
+      - table-people
   unicode: f509
   voted: false
 users-line:
@@ -52254,7 +52254,7 @@ users-slash:
       - employee
       - together
       - uer
-      - users-people
+      - table-people
   unicode: e073
   voted: false
 users-viewfinder:
@@ -54081,7 +54081,7 @@ wheelchair:
     terms:
       - disabled
       - uer
-      - users-people
+      - table-people
   unicode: f193
   voted: false
 wheelchair-move:
