@@ -1,6 +1,6 @@
 import {useNavigate} from "react-router-dom";
 import AuthService from "../../../services/api/authService";
-import {Button, Form} from "react-bootstrap";
+import React from "react";
 const LoginForm = () => {
   const navigate = useNavigate()
   const handleLogin = async (event) => {
@@ -18,21 +18,31 @@ const LoginForm = () => {
   };
 
   return (
-    <Form onSubmit={handleLogin}>
-      <Form.Group className="mb-3" controlId="login-username">
-        <Form.Label>Username</Form.Label>
-        <Form.Control type="text" name="username" placeholder="Username yozing" />
-      </Form.Group>
-
-      <Form.Group className="mb-3" controlId="login-password">
-        <Form.Label>Password</Form.Label>
-        <Form.Control type="password" name="password" placeholder="Parolingizni yozing" />
-      </Form.Group>
-
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
-    </Form>
+      <form onSubmit={handleLogin} noValidate>
+          <div className="form-group">
+              <label htmlFor="username">Username</label>
+              <input
+                  type="text"
+                  id="username"
+                  name={'username'}
+                  className={`form-control`}
+              />
+          </div>
+          <div className="form-group">
+              <label htmlFor="password">Parol</label>
+              <input
+                  type="password"
+                  id="password"
+                  className={`form-control`}
+                  name={'password'}
+              />
+          </div>
+          <div className="form-group">
+              <button type="submit" className="btn btn-primary btn-block">
+                  Kirish
+              </button>
+          </div>
+      </form>
   );
 };
 

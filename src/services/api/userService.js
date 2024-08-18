@@ -3,14 +3,31 @@ import axiosService from "./axiosService";
 class UserService {
   async getMe() {
     try {
-      const response = await axiosService.get('/profile/my-profile/');
-      console.log(response.data);
+      const response = await axiosService.get('/auth/user/');
       return response.data;
     } catch (error) {
-      console.error('Error fetching profile:', error.response.data);
       throw error.response.data;
     }
   }
+
+    async getMyProfile() {
+    try {
+      const response = await axiosService.get('/profile/my-profile/');
+      return response.data;
+    } catch (error) {
+      throw error.response.data;
+    }
+  }
+
+      async updateMyProfile(data) {
+    try {
+      const response = await axiosService.patch('/profile/my-profile/update',data);
+      return response.data;
+    } catch (error) {
+      throw error.response.data;
+    }
+  }
+
 }
 
 export default new UserService();

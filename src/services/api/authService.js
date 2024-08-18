@@ -14,7 +14,6 @@ class AuthService {
       });
       if (response.data.key) {
         localStorage.setItem('authToken', response.data.key);
-        console.log(localStorage.getItem('authToken'))
       }
       return response.data;
     } catch (error) {
@@ -44,10 +43,6 @@ class AuthService {
     } catch (error) {
       throw error.response.data;
     }
-  }
-
-  getCurrentUser() {
-    return JSON.parse(localStorage.getItem('user'));
   }
 }
 

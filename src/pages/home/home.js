@@ -1,28 +1,9 @@
-import React, {useEffect} from "react";
+import React from "react";
 import SmallBox from "../../components/home/small_box/SmallBox";
-import UserService from "../../services/api/userService";
-import {useState} from "react";
-import loadingSpinner from "../../components/utils/loading/loadingSpinner";
-import LoadingSpinner from "../../components/utils/loading/loadingSpinner";
+import LineChart from "../../components/home/chart/LineChart";
 const Home = () => {
-    const [user,setUser] = useState()
-    const [loading,setLoading] = useState(true)
-    useEffect(() => {
-        const getMe = async ()=>{
-            try {
-                await UserService.getMe()
-            }catch (e){
-                console.log('failed',e)
-            }
-        }
-        getMe();
-    }, []);
-
-    if (loading){
-        return <LoadingSpinner/>
-    }
-
     return (
+        <>
         <div className="row m-4">
             <div className="col-lg-4 col-md-12 col-sm-12">
                 <SmallBox color="blue" title="Loyihalar soni" link={'/all'} value="18" />
@@ -34,6 +15,7 @@ const Home = () => {
                 <SmallBox color="green" title="Tugatilgan" value="0" link={'/finished'} />
             </div>
         </div>
+            </>
     );
 };
 

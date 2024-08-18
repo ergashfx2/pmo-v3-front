@@ -8,10 +8,9 @@ class AxiosService {
     instance.interceptors.request.use(
       (config) => {
         const token = localStorage.getItem('authToken');
-          console.log(token)
 
         if (token) {
-          config.headers.Authorization = `Bearer ${token}`;
+          config.headers.Authorization = `Token ${token}`;
         }
 
         return config;
