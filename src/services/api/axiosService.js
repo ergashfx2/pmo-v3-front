@@ -3,7 +3,7 @@ import axios from 'axios';
 class AxiosService {
   constructor() {
     const instance = axios.create({
-      baseURL: 'https://ergashfx2-pmo-v3-eca4.twc1.net',
+      baseURL: 'http://127.0.0.1:8000',
     });
     instance.interceptors.request.use(
       (config) => {

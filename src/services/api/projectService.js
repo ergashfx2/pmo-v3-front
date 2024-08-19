@@ -1,9 +1,9 @@
 import axiosService from "./axiosService";
 
-class AdminService {
-  async getUsers() {
+class ProjectService {
+  async getProjects() {
     try {
-      const response = await axiosService.get('/users/all/');
+      const response = await axiosService.get('/projects/all/');
       return response.data;
     } catch (error) {
       throw error.response.data;
@@ -12,4 +12,4 @@ class AdminService {
 
 }
 
-export default new AdminService();
+export default new ProjectService();

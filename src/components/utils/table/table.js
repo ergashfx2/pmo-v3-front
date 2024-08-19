@@ -1,21 +1,18 @@
 import React from 'react';
 import {Table} from "react-bootstrap";
-function MyTable({thead_elements,tbody_elements}) {
+function MyTable({thead_elements,tbody}) {    
     return (
         <Table striped bordered>
             <thead>
+            <tr>
             {thead_elements.map((element)=>(
-                <tr>
                     <th>{element}</th>
-                </tr>
+            
             ))}
+            </tr>
             </thead>
             <tbody>
-            {tbody_elements.map((el)=>(
-                <tr>
-                    <th>{el}</th>
-                </tr>
-            ))}
+                {tbody}
             </tbody>
         </Table>
     );

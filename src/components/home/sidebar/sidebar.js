@@ -4,6 +4,7 @@ import Logo from '../../../assets/images/AdminLTELogo.png';
 import UserService from "../../../services/api/userService";
 import LoadingSpinner from "../../utils/loading/loadingSpinner";
 import NavItem from "./NavItem/NavItem";
+import '../sidebar/sidebar.css'
 const SideBar = () => {
     const [user, setUser] = useState()
     const [loading, setLoading] = useState(true)

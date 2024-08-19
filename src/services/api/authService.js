@@ -2,7 +2,7 @@ import axios from 'axios';
 
 class AuthService {
   constructor() {
-    this.apiUrl = 'https://ergashfx2-pmo-v3-eca4.twc1.net/';
+    this.apiUrl = 'http://127.0.0.1:8000';
   }
 
 
