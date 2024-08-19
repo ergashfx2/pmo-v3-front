@@ -529,7 +529,7 @@
       } else {
         $.md5 = md5;
       }
-    })(commonjsGlobal);
+    }(commonjsGlobal));
   });
 
   function md5ForNode(node) {
