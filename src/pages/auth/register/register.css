@@ -1,0 +1,12 @@
+#register-form-container {
+  margin-top: 10%;
+}
+
+body {
+  background-color: white;
+}
+
+#register-form-container .card {
+  margin-left: 10%;
+  margin-right: 10%;
+}

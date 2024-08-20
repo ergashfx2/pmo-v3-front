@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 import UsersTool from "../../../components/users/UsersTool";
-import { Container } from "react-bootstrap";
 import Table from "../../../components/utils/table/table";
 import AdminService from "../../../services/api/adminService";
 import "./UsersPage.css";
 import Paginator from "../../../components/utils/paginator/Paginator";
+import UserActions from "../../../components/users/userActions";
+
 const UsersPage = () => {
   const [users, setUsers] = useState();
   useEffect(() => {
     const usersData = async () => {
       await AdminService.getUsers().then((res) => {
         setUsers(res.results);
-        console.log(res.results);
       });
     };
     usersData();
@@ -33,7 +33,13 @@ const UsersPage = () => {
                 <p className="d-inline">{user.last_name}</p>
               </td>
               <td scope="col" className="col-0 text-center">
-                <i class="fa-solid fa-circle" style={{ color: "#008000" }}></i>
+                <i
+                  className={
+                    user.status === "Active"
+                      ? "fa-solid fa-circle text-green"
+                      : "fa-solid fa-circle text-red"
+                  }
+                ></i>
               </td>
               <td scope="col" className="col-3">
                 {user.role}
@@ -42,16 +48,7 @@ const UsersPage = () => {
                 {user.phone}
               </td>
               <td scope="col" className="col-2 text-center">
-                <i
-                  user_id={user.id}
-                  role="button"
-                  class="fa-solid fa-lock mr-3"
-                ></i>
-                <i
-                  user_id={user.id}
-                  role="button"
-                  class="fa-solid fa-trash"
-                ></i>
+                <UserActions user={user} />
               </td>
             </tr>
           ))}

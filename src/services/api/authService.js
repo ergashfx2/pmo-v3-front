@@ -1,10 +1,9 @@
-import axios from 'axios';
+import axios from "axios";
 
 class AuthService {
   constructor() {
-    this.apiUrl = 'http://127.0.0.1:8000';
+    this.apiUrl = "http://127.0.0.1:8000";
   }
-
 
   async login(username, password) {
     try {
@@ -13,35 +12,32 @@ class AuthService {
         password,
       });
       if (response.data.key) {
-        localStorage.setItem('authToken', response.data.key);
+        localStorage.setItem("authToken", response.data.key);
       }
       return response.data;
     } catch (error) {
-      throw error.response.data;
+      console.error(error);
     }
   }
 
-
-  async register(username, email, password1, password2) {
+  async register(data) {
     try {
-      const response = await axios.post(`${this.apiUrl}/auth/registration/`, {
-        username,
-        email,
-        password1,
-        password2,
-      });
+      const response = await axios.post(
+        `${this.apiUrl}/auth/registration/`,
+        data
+      );
       return response.data;
     } catch (error) {
-      throw error.response.data;
+      return error.response;
     }
   }
 
   async logout() {
     try {
       await axios.post(`${this.apiUrl}/auth/logout/`);
-      localStorage.removeItem('authToken');
+      localStorage.removeItem("authToken");
     } catch (error) {
-      throw error.response.data;
+      console.error(error);
     }
   }
 }
