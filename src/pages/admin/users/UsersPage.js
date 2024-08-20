@@ -3,7 +3,8 @@ import UsersTool from "../../../components/users/UsersTool";
 import { Container } from "react-bootstrap";
 import Table from "../../../components/utils/table/table";
 import AdminService from "../../../services/api/adminService";
-
+import "./UsersPage.css";
+import Paginator from "../../../components/utils/paginator/Paginator";
 const UsersPage = () => {
   const [users, setUsers] = useState();
   useEffect(() => {
@@ -18,14 +19,12 @@ const UsersPage = () => {
 
   if (users) {
     return (
-      <div>
-        <Container>
-          <UsersTool />
-        </Container>
+      <div className="mx-3">
+        <UsersTool />
         <Table
           thead_elements={["№", "FIO", "STATUS", "RO'LI", "RAQAMI"]}
           tbody={users.map((user, index) => (
-            <tr key={index}>
+            <tr key={index} className="p-4">
               <td scope="col" className="col-0">
                 {index + 1}
               </td>
@@ -57,6 +56,7 @@ const UsersPage = () => {
             </tr>
           ))}
         />
+        <Paginator />
       </div>
     );
   } else {
