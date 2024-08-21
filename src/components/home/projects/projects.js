@@ -9,12 +9,10 @@ const Projects = () => {
         const getProjects = async () => {
             try {
                 const projects = await ProjectService.getProjects()
-                setProjects(projects.results.slice(0,5))
-                console.log(projects.results);
-                
+                setProjects(projects.slice(0,5))
                 setLoading(false)
             } catch (e) {
-                console.log('failed', e)
+                
             }
         }
         getProjects();
