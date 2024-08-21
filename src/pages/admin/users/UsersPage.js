@@ -86,7 +86,7 @@ const UsersPage = () => {
         <Pagination>
           <Pagination.Item onClick={prePage}>&laquo; Oldingi</Pagination.Item>
           {numbers.map((num,index)=>(
-            <Pagination.Item onClick={setPage} active={num === currentPage ? true : false}>{num}</Pagination.Item>
+            <Pagination.Item key={index} onClick={setPage} active={num === currentPage ? true : false}>{num}</Pagination.Item>
           ))}
           <Pagination.Item onClick={nextPage}>Keyingi  &raquo;</Pagination.Item>
         </Pagination>
